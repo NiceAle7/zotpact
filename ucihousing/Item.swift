@@ -1,18 +1,13 @@
-//
-//  Item.swift
-//  ucihousing
-//
-//  Created by Alejandro Olivares-Lopez on 10/11/25.
-//
-
 import Foundation
 import SwiftData
 
 @Model
-final class Item {
+class Item: Identifiable {
+    @Attribute(.unique) var id: UUID = UUID()
     var timestamp: Date
-    
-    init(timestamp: Date) {
+
+    init(timestamp: Date = Date()) {
         self.timestamp = timestamp
     }
 }
+

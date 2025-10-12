@@ -1,10 +1,3 @@
-//
-//  ucihousingApp.swift
-//  ucihousing
-//
-//  Created by Alejandro Olivares-Lopez on 10/11/25.
-//
-
 import SwiftUI
 import SwiftData
 
@@ -23,9 +16,19 @@ struct ucihousingApp: App {
         }
     }()
 
+    @State private var isLoggedIn = false  // Track login state
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isLoggedIn {
+                ContentView(isLoggedIn: $isLoggedIn)
+            } else {
+                LoginView(onLoginSuccess: {
+                    withAnimation {
+                        isLoggedIn = true
+                    }
+                })
+            }
         }
         .modelContainer(sharedModelContainer)
     }
