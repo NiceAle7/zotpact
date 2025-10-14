@@ -36,7 +36,7 @@ struct LoginView: View {
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                             
-                            Text("Please enter the email provided by your institution")
+                            Text("Please the email provided by your institution")
                                 .font(.subheadline)
                             
                             
