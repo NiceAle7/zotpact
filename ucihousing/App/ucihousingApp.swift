@@ -2,34 +2,40 @@ import SwiftUI
 import SwiftData
 
 @main
-struct ucihousingApp: App {
+struct uciHousingApp: App {
+    @State private var isLoggedIn = false
+    
+    // Shared SwiftData container
     var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
+        let schema = Schema([Item.self])
+        let config = ModelConfiguration(isStoredInMemoryOnly: false)
         do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+            return try ModelContainer(for: schema, configurations: [config])
         } catch {
-            fatalError("Could not create ModelContainer: \(error)")
+            fatalError("Failed to create ModelContainer: \(error)")
         }
     }()
-
-    @State private var isLoggedIn = false  // Track login state
-
+    
     var body: some Scene {
         WindowGroup {
-            if isLoggedIn {
-                ContentView(isLoggedIn: $isLoggedIn)
-            } else {
-                LoginView(onLoginSuccess: {
-                    withAnimation {
-                        isLoggedIn = true
-                    }
-                })
-            }
+            RootView(isLoggedIn: $isLoggedIn)
+                .modelContainer(sharedModelContainer)
         }
-        .modelContainer(sharedModelContainer)
     }
 }
+
+// RootView switches between login and main content
+struct RootView: View {
+    @Binding var isLoggedIn: Bool
+    
+    var body: some View {
+        if isLoggedIn {
+            ContentView(isLoggedIn: $isLoggedIn)
+        } else {
+            LoginView {
+                isLoggedIn = true
+            }
+        }
+    }
+}
+
