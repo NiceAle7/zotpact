@@ -37,5 +37,7 @@ struct RootView: View {
             }
         }
     }
+
 }
 
+//rm -rf ~/Library/Developer/Xcode/DerivedData
