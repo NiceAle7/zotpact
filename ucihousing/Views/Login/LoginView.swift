@@ -15,38 +15,37 @@ struct LoginView: View {
                         HStack {
                             Image("roompact_logo") // placeholder for Roompact logo
                                 .resizable()
-                                .scaledToFit()
-                                .frame(width: 30, height: 30)
+                                .scaledToFill()
+                                .frame(width: 30, height: 80)
                             Text("ROOMPACT")
-                                .font(.headline)
+                                .font(.custom("Square721BT-BoldExtended", size: 36))
                                 .foregroundColor(.white)
                                 .tracking(2)
-                            Spacer()
                         }
                         .padding()
                         
                         Spacer()
                         
                         // Login card
-                        VStack(alignment: .leading, spacing: 16) {
+                        VStack(alignment: .center, spacing: 16) {
                             Text("Login to Roompact")
                                 .font(.title2)
+                                .bold()
                             
                             Text("Your Housing and Residence Life Department uses our software to help you complete common tasks related to living on campus.")
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
+                                .multilineTextAlignment(.center)
                             
-                            Text("Please the email provided by your institution")
-                                .font(.subheadline)
+                            Text("Please enter the email provided by your institution")
+                                .font(.footnote)
+                            
                             
                             
                             TextField("", text: $email)
-                                .padding(.vertical, 8)           // adds some vertical padding
+                                .padding(12)           // adds some vertical padding
                                 .overlay(
-                                    Rectangle()
-                                        .frame(height: 1)        // thickness of underline
-                                        .foregroundColor(.gray),  // color of underline
-                                    alignment: .bottom
+                                    RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 0.5)
                                 )
                                 .padding(.horizontal)    
                             Button(action: {
@@ -62,6 +61,7 @@ struct LoginView: View {
                             }
                             .padding(.top, 8)
                         }
+                        .frame(maxWidth: .infinity)
                         .padding()
                         .background(Color.white)
                         .cornerRadius(12)
@@ -71,7 +71,7 @@ struct LoginView: View {
                         Spacer()
                         
                         // Footer
-                        Text("© 2025 Roompact, LLC | Terms & Privacy")
+                        Text("© 2026 Roompact, LLC | Terms & Privacy")
                             .font(.footnote)
                             .foregroundColor(.white.opacity(0.7))
                             .padding(.bottom, 16)
