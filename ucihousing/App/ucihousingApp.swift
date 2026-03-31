@@ -27,17 +27,14 @@ struct uciHousingApp: App {
 // RootView switches between login and main content
 struct RootView: View {
     @Binding var isLoggedIn: Bool
-    
+
     var body: some View {
         if isLoggedIn {
             ContentView(isLoggedIn: $isLoggedIn)
         } else {
-            LoginView {
-                isLoggedIn = true
-            }
+            LoginView(isLoggedIn: $isLoggedIn)
         }
     }
-
 }
 
 //rm -rf ~/Library/Developer/Xcode/DerivedData

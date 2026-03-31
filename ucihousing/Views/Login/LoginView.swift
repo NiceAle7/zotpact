@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct LoginView: View {
-    var onLogin: () -> Void
     @State private var email = ""
+    @Binding var isLoggedIn: Bool
     
     var body: some View {
                 ZStack {
@@ -16,7 +16,7 @@ struct LoginView: View {
                             Image("roompact_logo") // placeholder for Roompact logo
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 30, height: 80)
+                                .frame(width: 30, height: 100)
                             Text("ROOMPACT")
                                 .font(.custom("Square721BT-BoldExtended", size: 36))
                                 .foregroundColor(.white)
@@ -24,7 +24,7 @@ struct LoginView: View {
                         }
                         .padding()
                         
-                        Spacer()
+                        Spacer().frame(height:6)
                         
                         // Login card
                         VStack(alignment: .center, spacing: 16) {
@@ -43,12 +43,16 @@ struct LoginView: View {
                             
                             
                             TextField("", text: $email)
+                                .textInputAutocapitalization(.never)
                                 .padding(12)           // adds some vertical padding
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 0.5)
                                 )
                                 .padding(.horizontal)    
                             Button(action: {
+                                withAnimation{
+                                    isLoggedIn = true
+                                }
                                 // handle login here
                             }) {
                                 Text("Continue")
@@ -60,6 +64,10 @@ struct LoginView: View {
                                     .cornerRadius(8)
                             }
                             .padding(.top, 8)
+                            Text("© 2026 Roompact, LLC | Terms & Privacy")
+                                .font(.footnote)
+                                .foregroundColor(.secondary)
+                                .padding(.bottom, 16)
                         }
                         .frame(maxWidth: .infinity)
                         .padding()
@@ -68,22 +76,26 @@ struct LoginView: View {
                         .shadow(radius: 8)
                         .padding(.horizontal, 24)
                         
-                        Spacer()
-                        
-                        // Footer
-                        Text("© 2026 Roompact, LLC | Terms & Privacy")
-                            .font(.footnote)
-                            .foregroundColor(.white.opacity(0.7))
-                            .padding(.bottom, 16)
                     }
                 }
             }
 }
 
-// Preview
-#Preview {
-    LoginView {
-        print("Login tapped")
+
+struct YourApp: App {
+    @State private var isLoggedIn = false
+
+    var body: some Scene {
+        WindowGroup {
+            if isLoggedIn {
+                ContentView(isLoggedIn: $isLoggedIn)
+            } else {
+                LoginView(isLoggedIn: $isLoggedIn)
+            }
+        }
     }
 }
 
+#Preview {
+    LoginView(isLoggedIn: .constant(false))
+}

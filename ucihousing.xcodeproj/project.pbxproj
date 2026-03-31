@@ -7,23 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11E9C0902F7B3F210013161F /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0792F7B3F210013161F /* SplashView.swift */; };
-		11E9C0912F7B3F210013161F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C07B2F7B3F210013161F /* CustomButton.swift */; };
-		11E9C0922F7B3F210013161F /* DashboardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C07C2F7B3F210013161F /* DashboardCard.swift */; };
-		11E9C0932F7B3F210013161F /* NotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C07D2F7B3F210013161F /* NotificationBanner.swift */; };
-		11E9C0942F7B3F210013161F /* ResidentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C07E2F7B3F210013161F /* ResidentRow.swift */; };
-		11E9C0952F7B3F210013161F /* CheckInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0802F7B3F210013161F /* CheckInView.swift */; };
-		11E9C0962F7B3F210013161F /* DutyScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0812F7B3F210013161F /* DutyScheduleView.swift */; };
-		11E9C0972F7B3F210013161F /* IncidentReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0822F7B3F210013161F /* IncidentReportView.swift */; };
-		11E9C0982F7B3F210013161F /* ResidentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0832F7B3F210013161F /* ResidentsView.swift */; };
-		11E9C0992F7B3F210013161F /* AdminDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0852F7B3F210013161F /* AdminDashboardView.swift */; };
-		11E9C09A2F7B3F210013161F /* ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0862F7B3F210013161F /* ReportsView.swift */; };
-		11E9C09B2F7B3F210013161F /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0882F7B3F210013161F /* AgreementView.swift */; };
-		11E9C09C2F7B3F210013161F /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0892F7B3F210013161F /* DashboardView.swift */; };
-		11E9C09D2F7B3F210013161F /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C08A2F7B3F210013161F /* EventsView.swift */; };
-		11E9C09E2F7B3F210013161F /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C08B2F7B3F210013161F /* MessagesView.swift */; };
-		11E9C09F2F7B3F210013161F /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C08C2F7B3F210013161F /* ResourcesView.swift */; };
-		11E9C0A02F7B3F210013161F /* RoommateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C08D2F7B3F210013161F /* RoommateView.swift */; };
 		11E9C0A72F7B3F240013161F /* AgreementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0A12F7B3F240013161F /* AgreementViewModel.swift */; };
 		11E9C0A82F7B3F240013161F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0A22F7B3F240013161F /* AuthViewModel.swift */; };
 		11E9C0A92F7B3F240013161F /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0A32F7B3F240013161F /* DashboardViewModel.swift */; };
@@ -45,12 +28,6 @@
 		11E9C0CE2F7B3F310013161F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0CA2F7B3F310013161F /* APIError.swift */; };
 		11E9C0CF2F7B3F310013161F /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0CB2F7B3F310013161F /* Endpoints.swift */; };
 		11E9C0D02F7B3F310013161F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0CC2F7B3F310013161F /* NetworkManager.swift */; };
-		11E9C0D82F7B3F360013161F /* Agreement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0D12F7B3F360013161F /* Agreement.swift */; };
-		11E9C0D92F7B3F360013161F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0D22F7B3F360013161F /* Event.swift */; };
-		11E9C0DA2F7B3F360013161F /* IncidentReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0D32F7B3F360013161F /* IncidentReport.swift */; };
-		11E9C0DB2F7B3F360013161F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0D42F7B3F360013161F /* Message.swift */; };
-		11E9C0DC2F7B3F360013161F /* Roommate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0D52F7B3F360013161F /* Roommate.swift */; };
-		11E9C0DD2F7B3F360013161F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0D62F7B3F360013161F /* User.swift */; };
 		11E9C0E22F7B3F3A0013161F /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0DE2F7B3F3A0013161F /* KeychainManager.swift */; };
 		11E9C0E32F7B3F3A0013161F /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0DF2F7B3F3A0013161F /* NavigationManager.swift */; };
 		11E9C0E42F7B3F3A0013161F /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9C0E02F7B3F3A0013161F /* SessionManager.swift */; };
@@ -77,23 +54,6 @@
 		114627D82E9B06EC00DD34A3 /* ucihousing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ucihousing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		114627E72E9B06EF00DD34A3 /* ucihousingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ucihousingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		114627F12E9B06EF00DD34A3 /* ucihousingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ucihousingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		11E9C0792F7B3F210013161F /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		11E9C07B2F7B3F210013161F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		11E9C07C2F7B3F210013161F /* DashboardCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCard.swift; sourceTree = "<group>"; };
-		11E9C07D2F7B3F210013161F /* NotificationBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBanner.swift; sourceTree = "<group>"; };
-		11E9C07E2F7B3F210013161F /* ResidentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentRow.swift; sourceTree = "<group>"; };
-		11E9C0802F7B3F210013161F /* CheckInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInView.swift; sourceTree = "<group>"; };
-		11E9C0812F7B3F210013161F /* DutyScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DutyScheduleView.swift; sourceTree = "<group>"; };
-		11E9C0822F7B3F210013161F /* IncidentReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentReportView.swift; sourceTree = "<group>"; };
-		11E9C0832F7B3F210013161F /* ResidentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentsView.swift; sourceTree = "<group>"; };
-		11E9C0852F7B3F210013161F /* AdminDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminDashboardView.swift; sourceTree = "<group>"; };
-		11E9C0862F7B3F210013161F /* ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsView.swift; sourceTree = "<group>"; };
-		11E9C0882F7B3F210013161F /* AgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementView.swift; sourceTree = "<group>"; };
-		11E9C0892F7B3F210013161F /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
-		11E9C08A2F7B3F210013161F /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
-		11E9C08B2F7B3F210013161F /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
-		11E9C08C2F7B3F210013161F /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
-		11E9C08D2F7B3F210013161F /* RoommateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoommateView.swift; sourceTree = "<group>"; };
 		11E9C0A12F7B3F240013161F /* AgreementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementViewModel.swift; sourceTree = "<group>"; };
 		11E9C0A22F7B3F240013161F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		11E9C0A32F7B3F240013161F /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
@@ -115,12 +75,6 @@
 		11E9C0CA2F7B3F310013161F /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		11E9C0CB2F7B3F310013161F /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		11E9C0CC2F7B3F310013161F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		11E9C0D12F7B3F360013161F /* Agreement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agreement.swift; sourceTree = "<group>"; };
-		11E9C0D22F7B3F360013161F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		11E9C0D32F7B3F360013161F /* IncidentReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentReport.swift; sourceTree = "<group>"; };
-		11E9C0D42F7B3F360013161F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		11E9C0D52F7B3F360013161F /* Roommate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roommate.swift; sourceTree = "<group>"; };
-		11E9C0D62F7B3F360013161F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		11E9C0DE2F7B3F3A0013161F /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		11E9C0DF2F7B3F3A0013161F /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		11E9C0E02F7B3F3A0013161F /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
@@ -177,13 +131,11 @@
 				114627F42E9B06EF00DD34A3 /* ucihousingUITests */,
 				114627D92E9B06EC00DD34A3 /* Products */,
 				11E9C0E12F7B3F3A0013161F /* Managers */,
-				11E9C0D72F7B3F360013161F /* Models */,
 				11E9C0CD2F7B3F310013161F /* Networking */,
 				11E9C0C62F7B3F2F0013161F /* Resources */,
 				11E9C0BB2F7B3F2B0013161F /* Services */,
 				11E9C0B02F7B3F270013161F /* Utilities */,
 				11E9C0A62F7B3F240013161F /* ViewModels */,
-				11E9C08F2F7B3F210013161F /* Views */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,70 +147,6 @@
 				114627F12E9B06EF00DD34A3 /* ucihousingUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		11E9C07A2F7B3F210013161F /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				11E9C0792F7B3F210013161F /* SplashView.swift */,
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
-		11E9C07F2F7B3F210013161F /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				11E9C07B2F7B3F210013161F /* CustomButton.swift */,
-				11E9C07C2F7B3F210013161F /* DashboardCard.swift */,
-				11E9C07D2F7B3F210013161F /* NotificationBanner.swift */,
-				11E9C07E2F7B3F210013161F /* ResidentRow.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		11E9C0842F7B3F210013161F /* RA */ = {
-			isa = PBXGroup;
-			children = (
-				11E9C0802F7B3F210013161F /* CheckInView.swift */,
-				11E9C0812F7B3F210013161F /* DutyScheduleView.swift */,
-				11E9C0822F7B3F210013161F /* IncidentReportView.swift */,
-				11E9C0832F7B3F210013161F /* ResidentsView.swift */,
-			);
-			path = RA;
-			sourceTree = "<group>";
-		};
-		11E9C0872F7B3F210013161F /* Staff */ = {
-			isa = PBXGroup;
-			children = (
-				11E9C0852F7B3F210013161F /* AdminDashboardView.swift */,
-				11E9C0862F7B3F210013161F /* ReportsView.swift */,
-			);
-			path = Staff;
-			sourceTree = "<group>";
-		};
-		11E9C08E2F7B3F210013161F /* Student */ = {
-			isa = PBXGroup;
-			children = (
-				11E9C0882F7B3F210013161F /* AgreementView.swift */,
-				11E9C0892F7B3F210013161F /* DashboardView.swift */,
-				11E9C08A2F7B3F210013161F /* EventsView.swift */,
-				11E9C08B2F7B3F210013161F /* MessagesView.swift */,
-				11E9C08C2F7B3F210013161F /* ResourcesView.swift */,
-				11E9C08D2F7B3F210013161F /* RoommateView.swift */,
-			);
-			path = Student;
-			sourceTree = "<group>";
-		};
-		11E9C08F2F7B3F210013161F /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				11E9C07A2F7B3F210013161F /* Auth */,
-				11E9C07F2F7B3F210013161F /* Components */,
-				11E9C0842F7B3F210013161F /* RA */,
-				11E9C0872F7B3F210013161F /* Staff */,
-				11E9C08E2F7B3F210013161F /* Student */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		11E9C0A62F7B3F240013161F /* ViewModels */ = {
@@ -323,19 +211,6 @@
 				11E9C0CC2F7B3F310013161F /* NetworkManager.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		11E9C0D72F7B3F360013161F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				11E9C0D12F7B3F360013161F /* Agreement.swift */,
-				11E9C0D22F7B3F360013161F /* Event.swift */,
-				11E9C0D32F7B3F360013161F /* IncidentReport.swift */,
-				11E9C0D42F7B3F360013161F /* Message.swift */,
-				11E9C0D52F7B3F360013161F /* Roommate.swift */,
-				11E9C0D62F7B3F360013161F /* User.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		11E9C0E12F7B3F3A0013161F /* Managers */ = {
@@ -502,23 +377,9 @@
 				11E9C0B22F7B3F270013161F /* Constants.swift in Sources */,
 				11E9C0B32F7B3F270013161F /* Extensions.swift in Sources */,
 				11E9C0B42F7B3F270013161F /* Validators.swift in Sources */,
-				11E9C0902F7B3F210013161F /* SplashView.swift in Sources */,
-				11E9C0912F7B3F210013161F /* CustomButton.swift in Sources */,
-				11E9C0922F7B3F210013161F /* DashboardCard.swift in Sources */,
-				11E9C0932F7B3F210013161F /* NotificationBanner.swift in Sources */,
-				11E9C0942F7B3F210013161F /* ResidentRow.swift in Sources */,
-				11E9C0D82F7B3F360013161F /* Agreement.swift in Sources */,
-				11E9C0D92F7B3F360013161F /* Event.swift in Sources */,
-				11E9C0DA2F7B3F360013161F /* IncidentReport.swift in Sources */,
-				11E9C0DB2F7B3F360013161F /* Message.swift in Sources */,
-				11E9C0DC2F7B3F360013161F /* Roommate.swift in Sources */,
-				11E9C0DD2F7B3F360013161F /* User.swift in Sources */,
-				11E9C0952F7B3F210013161F /* CheckInView.swift in Sources */,
-				11E9C0962F7B3F210013161F /* DutyScheduleView.swift in Sources */,
 				11E9C0E22F7B3F3A0013161F /* KeychainManager.swift in Sources */,
 				11E9C0E32F7B3F3A0013161F /* NavigationManager.swift in Sources */,
 				11E9C0E42F7B3F3A0013161F /* SessionManager.swift in Sources */,
-				11E9C0972F7B3F210013161F /* IncidentReportView.swift in Sources */,
 				11E9C0A72F7B3F240013161F /* AgreementViewModel.swift in Sources */,
 				11E9C0A82F7B3F240013161F /* AuthViewModel.swift in Sources */,
 				11E9C0A92F7B3F240013161F /* DashboardViewModel.swift in Sources */,
@@ -530,15 +391,6 @@
 				11E9C0C12F7B3F2B0013161F /* RoommateService.swift in Sources */,
 				11E9C0AA2F7B3F240013161F /* EventViewModel.swift in Sources */,
 				11E9C0AB2F7B3F240013161F /* MessageViewModel.swift in Sources */,
-				11E9C0982F7B3F210013161F /* ResidentsView.swift in Sources */,
-				11E9C0992F7B3F210013161F /* AdminDashboardView.swift in Sources */,
-				11E9C09A2F7B3F210013161F /* ReportsView.swift in Sources */,
-				11E9C09B2F7B3F210013161F /* AgreementView.swift in Sources */,
-				11E9C09C2F7B3F210013161F /* DashboardView.swift in Sources */,
-				11E9C09D2F7B3F210013161F /* EventsView.swift in Sources */,
-				11E9C09E2F7B3F210013161F /* MessagesView.swift in Sources */,
-				11E9C09F2F7B3F210013161F /* ResourcesView.swift in Sources */,
-				11E9C0A02F7B3F210013161F /* RoommateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
