@@ -7,51 +7,58 @@ struct HeaderView: View {
     @State private var selectedMenu3 = "Help"
 
     var body: some View {
-        HStack(spacing: 20) {
-            // Main logo
-            Image("roompact_logo")
-                .resizable()
-                .scaledToFill()
-                .frame(width: 50, height: 80)
-            
-            Spacer()
-            
-            HStack(spacing: 1) { // small spacing between menu logos
-                    Menu {
-                        Button("Support") {}
-                        Button("FAQ") {}
-                    } label: {
-                        Image("roompact_logo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 50, height: 80)
+        VStack{
+            HStack(spacing: 20) {
+                // Main logo
+                Image("roompact_logo")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 50, height: 80)
+                
+                Spacer()
+                
+                HStack(spacing: 1) { // small spacing between menu logos
+                        Menu {
+                            Button("Forms") {}
+                            Button("Schedule") {}
+                            Button("Events") {}
+                            Button("Attendance") {}
+                            Button("Argeements") {}
+                        } label: {
+                            Image("profile_logo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 25, height: 80)
+                        }
+                        
+                        Menu {
+                            Button("Support") {}
+                            Button("FAQ") {}
+                        } label: {
+                            Image("speech_logo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 25, height: 80)
+                        }
+                        
+                        Menu {
+                            Button("Profile Settings") {}
+                            Button("Logout") {}
+                        } label: {
+                            Image("dropdown_logo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 25, height: 80)
+                        }
                     }
-                    
-                    Menu {
-                        Button("Support") {}
-                        Button("FAQ") {}
-                    } label: {
-                        Image("roompact_logo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 50, height: 70)
-                    }
-                    
-                    Menu {
-                        Button("Support") {}
-                        Button("FAQ") {}
-                    } label: {
-                        Image("roompact_logo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 50, height: 70)
-                    }
-                }
-            
+                
+            }
+            .padding(.horizontal, 10)
+            .background(Color.black) // <- black background
         }
-        .padding(.horizontal, 10)
-        .background(Color.black)    // <- black background
+        Spacer()
     }
+
 
     @Binding var isLoggedIn: Bool
 }
