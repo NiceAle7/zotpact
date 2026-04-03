@@ -1,47 +1,45 @@
-//
-//  LoginView.swift
-//  ucihousing
-//
-//  Created by Alejandro Olivares-Lopez on 4/2/26.
-//
 import SwiftUI
 
 struct LoginView: View {
-    @StateObject private var vm = AuthViewModel()
+    @State private var email = ""
 
     var body: some View {
         ZStack {
+            // Background color
             Color(red: 47/255, green: 67/255, blue: 86/255)
                 .ignoresSafeArea()
-            
+
             VStack {
-                // Header
+                // Header with logo + title
                 HStack {
-                    Image("roompact_logo")
+                    Image("roompact_logo") // placeholder for Roompact logo
                         .resizable()
                         .scaledToFill()
                         .frame(width: 30, height: 100)
-
-                    Text("ZOTPACT") // 🔥 change branding
+                    Text("ROOMPACT")
                         .font(.custom("Square721BT-BoldExtended", size: 36))
                         .foregroundColor(.white)
                         .tracking(2)
                 }
                 .padding()
-                
+
                 Spacer().frame(height: 6)
-                
-                VStack(spacing: 16) {
+
+                // Login card
+                VStack(alignment: .center, spacing: 16) {
                     Text("Login to Roompact")
                         .font(.title2)
                         .bold()
-                    
-                    Text("Please enter the email provided by your institution")
+
+                    Text("Your Housing and Residence Life Department uses our software to help you complete common tasks related to living on campus.")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                         .multilineTextAlignment(.center)
-                    
-                    TextField("Email", text: $vm.email)
+
+                    Text("Please enter the email provided by your institution")
+                        .font(.footnote)
+
+                    TextField("", text: $email)
                         .textInputAutocapitalization(.never)
                         .padding(12)
                         .overlay(
@@ -49,10 +47,13 @@ struct LoginView: View {
                                 .stroke(Color.gray, lineWidth: 0.5)
                         )
                         .padding(.horizontal)
-                    
-                    Button {
-                        vm.login()
-                    } label: {
+
+                    Button(action: {
+                        withAnimation {
+                            
+                        }
+                        // handle login here
+                    }) {
                         Text("Continue")
                             .fontWeight(.semibold)
                             .frame(maxWidth: .infinity)
@@ -62,6 +63,11 @@ struct LoginView: View {
                             .cornerRadius(8)
                     }
                     .padding(.top, 8)
+
+                    Text("© 2026 Roompact, LLC | Terms & Privacy")
+                        .font(.footnote)
+                        .foregroundColor(.secondary)
+                        .padding(.bottom, 16)
                 }
                 .frame(maxWidth: .infinity)
                 .padding()
@@ -73,6 +79,7 @@ struct LoginView: View {
         }
     }
 }
+
 
 #Preview {
     LoginView()

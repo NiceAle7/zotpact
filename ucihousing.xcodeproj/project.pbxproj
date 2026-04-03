@@ -67,6 +67,11 @@
 			path = ucihousing;
 			sourceTree = "<group>";
 		};
+		11DC4A0C2F7F6CF3006099AD /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +104,7 @@
 			children = (
 				114627DA2E9B06EC00DD34A3 /* ucihousing */,
 				114627D92E9B06EC00DD34A3 /* Products */,
+				11DC4A0C2F7F6CF3006099AD /* Models */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +135,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				114627DA2E9B06EC00DD34A3 /* ucihousing */,
+				11DC4A0C2F7F6CF3006099AD /* Models */,
 			);
 			name = ucihousing;
 			packageProductDependencies = (
