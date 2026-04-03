@@ -2,10 +2,9 @@ import SwiftUI
 import SwiftData
 
 @main
-struct uciHousingApp: App {
-    @State private var isLoggedIn = false
+struct UciHousingApp: App {
     
-    // Shared SwiftData container
+    // SwiftData container
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([Item.self])
         let config = ModelConfiguration(isStoredInMemoryOnly: false)
@@ -18,23 +17,11 @@ struct uciHousingApp: App {
     
     var body: some Scene {
         WindowGroup {
-            RootView(isLoggedIn: $isLoggedIn)
+            RootView()
                 .modelContainer(sharedModelContainer)
         }
     }
 }
 
-// RootView switches between login and main content
-struct RootView: View {
-    @Binding var isLoggedIn: Bool
-
-    var body: some View {
-        if isLoggedIn {
-            ContentView(isLoggedIn: $isLoggedIn)
-        } else {
-            LoginView(isLoggedIn: $isLoggedIn)
-        }
-    }
-}
 
 //rm -rf ~/Library/Developer/Xcode/DerivedData
