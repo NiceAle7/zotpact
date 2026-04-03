@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		110BF11C2F803F48005F00A4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110BF11B2F803F45005F00A4 /* Item.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		114627E82E9B06EF00DD34A3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		110BF11B2F803F45005F00A4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		114627D82E9B06EC00DD34A3 /* ucihousing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ucihousing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		114627E72E9B06EF00DD34A3 /* ucihousingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ucihousingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		114627F12E9B06EF00DD34A3 /* ucihousingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ucihousingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,11 +72,6 @@
 			path = ucihousing;
 			sourceTree = "<group>";
 		};
-		11DC4A0C2F7F6CF3006099AD /* Models */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Models;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +102,9 @@
 		114627CF2E9B06EC00DD34A3 = {
 			isa = PBXGroup;
 			children = (
+				110BF11B2F803F45005F00A4 /* Item.swift */,
 				114627DA2E9B06EC00DD34A3 /* ucihousing */,
 				114627D92E9B06EC00DD34A3 /* Products */,
-				11DC4A0C2F7F6CF3006099AD /* Models */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,7 +135,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				114627DA2E9B06EC00DD34A3 /* ucihousing */,
-				11DC4A0C2F7F6CF3006099AD /* Models */,
 			);
 			name = ucihousing;
 			packageProductDependencies = (
@@ -257,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110BF11C2F803F48005F00A4 /* Item.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
