@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		110BF11C2F803F48005F00A4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110BF11B2F803F45005F00A4 /* Item.swift */; };
+		11502D1A2F84CAD500FA9E4F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 11502D192F84CAD500FA9E4F /* FirebaseAuth */; };
+		11502D1D2F84CB1600FA9E4F /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 11502D1C2F84CB1600FA9E4F /* GoogleSignIn */; };
+		11502D1F2F84CB1600FA9E4F /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 11502D1E2F84CB1600FA9E4F /* GoogleSignInSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,7 @@
 		11D18DEE2F7F31D20014462F /* Exceptions for "ucihousing" folder in "ucihousing" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Info.plist,
 				ucihousingTests/ucihousingTests.swift,
 				ucihousingUITests/ucihousingUITests.swift,
 				ucihousingUITests/ucihousingUITestsLaunchTests.swift,
@@ -79,6 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11502D1F2F84CB1600FA9E4F /* GoogleSignInSwift in Frameworks */,
+				11502D1A2F84CAD500FA9E4F /* FirebaseAuth in Frameworks */,
+				11502D1D2F84CB1600FA9E4F /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +145,9 @@
 			);
 			name = ucihousing;
 			packageProductDependencies = (
+				11502D192F84CAD500FA9E4F /* FirebaseAuth */,
+				11502D1C2F84CB1600FA9E4F /* GoogleSignIn */,
+				11502D1E2F84CB1600FA9E4F /* GoogleSignInSwift */,
 			);
 			productName = ucihousing;
 			productReference = 114627D82E9B06EC00DD34A3 /* ucihousing.app */;
@@ -215,6 +225,10 @@
 			);
 			mainGroup = 114627CF2E9B06EC00DD34A3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				11502D182F84CAD500FA9E4F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				11502D1B2F84CB1600FA9E4F /* XCLocalSwiftPackageReference "../../GoogleSignIn-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 114627D92E9B06EC00DD34A3 /* Products */;
 			projectDirPath = "";
@@ -415,6 +429,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ucihousing/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -430,7 +445,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Alejandro.ucihousing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Alejandro.ucihousing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
@@ -457,6 +472,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ucihousing/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -472,7 +488,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Alejandro.ucihousing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Alejandro.ucihousing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
@@ -626,6 +642,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		11502D1B2F84CB1600FA9E4F /* XCLocalSwiftPackageReference "../../GoogleSignIn-iOS" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../GoogleSignIn-iOS";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11502D182F84CAD500FA9E4F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11502D192F84CAD500FA9E4F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11502D182F84CAD500FA9E4F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		11502D1C2F84CB1600FA9E4F /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GoogleSignIn;
+		};
+		11502D1E2F84CB1600FA9E4F /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 114627D02E9B06EC00DD34A3 /* Project object */;
 }
