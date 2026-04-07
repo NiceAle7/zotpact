@@ -45,15 +45,6 @@ struct LoginView: View {
                         Text("Please enter the email provided by your institution")
                             .font(.footnote)
                         
-                        // Bound to ViewModel
-                        TextField("", text: $vm.email)
-                            .textInputAutocapitalization(.never)
-                            .padding(12)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 8)
-                                    .stroke(Color.gray, lineWidth: 0.5)
-                            )
-                            .padding(.horizontal)
                         
                         // Email login
                         Button(action: {
@@ -62,7 +53,7 @@ struct LoginView: View {
                                 
                             }
                         }) {
-                            Text("Continue")
+                            Text("Login")
                                 .fontWeight(.semibold)
                                 .frame(maxWidth: .infinity)
                                 .padding()
