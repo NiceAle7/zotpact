@@ -10,8 +10,14 @@
 
 import Foundation
 import Combine
-import GoogleSignIn
+
+#if canImport(UIKit)
 import UIKit
+#endif
+
+#if canImport(GoogleSignIn)
+import GoogleSignIn
+#endif
 
 class AuthViewModel: ObservableObject {
     @Published var email: String = ""
@@ -28,6 +34,7 @@ class AuthViewModel: ObservableObject {
     
     // MARK: - Google Sign-In
     func signInWithGoogle() {
+#if canImport(UIKit) && canImport(GoogleSignIn)
         guard let rootViewController =
                 UIApplication.shared.connectedScenes
                     .compactMap({ ($0 as? UIWindowScene)?.keyWindow })
@@ -64,5 +71,8 @@ class AuthViewModel: ObservableObject {
                 }
             }
         }
+#else
+        errorMessage = "Google Sign-In is only available on iOS."
+#endif
     }
 }
