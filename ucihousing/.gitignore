@@ -11,3 +11,11 @@ xcuserdata/
 # Derived data & build products
 DerivedData/
 .build/
+
+# Archives / exports
+*.xcarchive
+*.ipa
+*.dSYM
+
+# macOS
+.DS_Store
