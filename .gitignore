@@ -1,6 +1,5 @@
 # Firebase / Google Services
 GoogleService-Info.plist
-Info.plist
 
 # Xcode user-specific state (never commit)
 *.xcuserstate
