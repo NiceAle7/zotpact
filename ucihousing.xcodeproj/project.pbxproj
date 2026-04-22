@@ -227,7 +227,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				11502D182F84CAD500FA9E4F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				11502D1B2F84CB1600FA9E4F /* XCLocalSwiftPackageReference "../../GoogleSignIn-iOS" */,
+				11502D1B2F84CB1600FA9E4F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 114627D92E9B06EC00DD34A3 /* Products */;
@@ -643,13 +643,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		11502D1B2F84CB1600FA9E4F /* XCLocalSwiftPackageReference "../../GoogleSignIn-iOS" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../GoogleSignIn-iOS";
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
 		11502D182F84CAD500FA9E4F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -657,6 +650,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 12.12.0;
+			};
+		};
+		11502D1B2F84CB1600FA9E4F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -669,10 +670,12 @@
 		};
 		11502D1C2F84CB1600FA9E4F /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 11502D1B2F84CB1600FA9E4F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignIn;
 		};
 		11502D1E2F84CB1600FA9E4F /* GoogleSignInSwift */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 11502D1B2F84CB1600FA9E4F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
